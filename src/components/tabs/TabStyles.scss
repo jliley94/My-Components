@@ -1,0 +1,43 @@
+$active: #fff;
+$inactive: #ebebeb;
+$hovered: #dedede;
+$border: #000;
+
+.tabs-container {
+
+    [class^="tab-"] {
+            background-color: $inactive;
+            color: #282c34;
+            border: 1px solid $border;
+        }
+
+    .tabs-headers {
+        display: flex;
+
+        .tab-header {
+            
+            font-weight: bold;
+            padding: 1vmin;
+            cursor: pointer;
+            user-select: none;
+
+            &.active {
+                background-color: $active;
+                border-bottom: none;
+
+                &:hover {
+                    background-color: $active;
+                }
+            }
+            &:hover {
+                background-color: $hovered;
+            }
+        }
+    }
+
+    .tab-contents {
+        display: flow-root;
+        border-top: none;
+        background-color: $active;
+    }
+}

@@ -1,0 +1,26 @@
+.actionButton {
+    background: #666;
+    color: #FFF;
+    padding: 5px;
+    border: 2px solid #DDD;
+    cursor: pointer;
+    user-select: none;
+    transition: background 1s;
+    margin: 5px 0;
+    max-width: 100%;  
+
+    &.prime {
+      background: #054271;
+      border: 2px solid #086dba;
+
+      &:hover {
+        background: #0a8aeb;
+        border: 2px solid #086dba;
+    }
+
+    }
+
+    &:hover {
+        border: 2px solid #EEE;
+    }
+  }

@@ -1,0 +1,41 @@
+.login-content {
+  background: white;
+  border-radius: 5px;
+  color: #282c34;
+  padding: 2vmax;
+
+  .form-container {
+    width: 12vmax;
+  }
+
+  input {
+    padding: 5px;
+    margin: 5px 0;
+    border: 0;
+    background: #f1f1f1;
+    font-size: calc(10px + 1vmin);
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .forgotten {
+    font-size: calc(10px + 1vmin);
+    cursor: pointer;
+    user-select: none;
+  }
+
+  &-enter {
+    transform: scale(0.6);
+  }
+  &-enter-active {
+    transform: scale(1);
+    transition: transform 300ms;
+  }
+  &-exit {
+    transform: scale(1);
+  }
+  &-exit-active {
+    transform: scale(0.6);
+    transition: transform 300ms;
+  }
+}

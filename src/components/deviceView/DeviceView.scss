@@ -1,0 +1,108 @@
+$radius: 5vmin;
+$outer: #303030;
+$mobileW: 18vw;
+$mobileH: 68vh;
+
+.device-view {
+  background: $outer;
+  border: 1px solid #000;
+  border-radius: $radius;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .device-front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &.mobile {
+    width: $mobileW;
+    height: $mobileH;
+  }
+  &.tablet {
+    width: 1150px;
+    height: 850px;
+  }
+
+  .mobile-head-overlay {
+    height: 3vh;
+    width: 50%;
+    background-color: $outer;
+    border-bottom-right-radius: $radius;
+    border-bottom-left-radius: $radius;
+    position: relative;
+    top: 2vh;
+    z-index: 2;
+  }
+
+  .device-view-head {
+    position: relative;
+    z-index: 1;
+    .browser-bar {
+      background: rgb(190, 190, 190);
+      height: 8vh;
+      width: calc(#{$mobileW} - 2vw);
+      border-top-right-radius: $radius;
+      border-top-left-radius: $radius;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .toast-display {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 1vw;
+        font-size: 0.8vw;
+        .icons svg {
+          padding: 0 0.2vw;
+        }
+      }
+      .searchbar {
+        align-self: center;
+        width: 90%;
+        height: 3vh;
+        background: #ababab;
+        border-radius: 1vmin;
+      }
+    }
+    &.tablet,
+    &.null {
+      display: none;
+    }
+  }
+
+  .device-view-screen {
+    background: #fff;
+    color: #282c34;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    &.mobile {
+      //border-radius: $radius;
+      border-bottom-right-radius: $radius;
+      border-bottom-left-radius: $radius;
+      width: calc(#{$mobileW} - 2vw);
+      height: calc(#{$mobileH} - 16vh);
+    }
+    &.tablet {
+      width: 1024px;
+      height: 768px;
+    }
+
+    .device-view-main {
+      flex: 1;
+    }
+  }
+}
+
+.emptyContainer {
+  width: 30vw;
+  height: 85vh;
+  overflow: hidden;
+}

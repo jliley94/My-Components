@@ -1,0 +1,14 @@
+.screen {
+    transform: translateY(0);
+    transition: transform 2s;
+
+    .page {
+        overflow: hidden;
+        height: 812px;
+        background-color: lightblue;
+        padding: 0 2vw;
+        &:nth-child(even) {
+            background-color: #7291d1;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+$navItemSize: 6vmin;
+
+.mini-nav {
+  position: relative;
+  height: 0;
+  z-index: 100;
+  
+  .nav-item {
+    background: cadetblue;
+    color: #282c34;
+    width: $navItemSize;
+    height: $navItemSize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.6;
+    cursor: pointer;
+    user-select: none;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:hover {
+      color: #545b67;
+      transition-delay: 0s !important;
+    }
+    &.sub {
+      transform: translateX(0vmin);
+      transition: opacity 1s, transform 1s;
+    }
+
+    &.hide {
+      opacity: 0;
+      transform: translateX(-$navItemSize);
+    }
+  }
+}

@@ -1,24 +1,45 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+
+// import MultiDirectionalSlider from './components/multiDirectionalSlider/MultiDirectionalSlider';
+
+// import TabsContainer from './components/tabs/TabContainer';
+// import Tab from './components/tabs/Tab';
+// import logo from './logo.svg';
+
+// import DeviceView from './components/deviceView/DeviceView';
+// import IconNav from './components/miniNav/IconNav';
+// import Screen from './components/miniNav/Screen';
+
+// import ActionButton from './components/actionButton/ActionButton';
+// import Modal from './components/modal/Modal';
+// import LoginForm from "./components/loginForm/Login";
 
 function App() {
+  // const [focus, setFocus] = useState(0);
+
+  // const [modalOpened, setModalOpened] = useState(false);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <MultiDirectionalSlider />   */}
+
+      {/* <TabsContainer default={0} >
+        <Tab title="Test 1">Description</Tab>
+        <Tab title="Test 2"><h2>heading</h2><p>this is some text</p></Tab>
+        <Tab title="Test 3"><img src={logo} alt="logo" /></Tab>
+      </TabsContainer> */}
+
+      {/* <DeviceView device="Mobile">
+        <IconNav focus={focus} changeFocus={setFocus} />
+        <Screen focus={focus} />
+      </DeviceView> */}
+
+      {/* <ActionButton text="Login" type="Prime" action={() => setModalOpened(true)} />
+      <Modal open={modalOpened} action={(state) => setModalOpened(state)}>
+        <LoginForm />
+      </Modal> */}
+
     </div>
   );
 }
