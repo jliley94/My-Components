@@ -1,0 +1,22 @@
+.textContainer {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex: 1;
+
+    .textNode {
+        opacity: 0;
+        font-weight: bolder;
+        font-variant: small-caps;
+        //display: inline;
+        &.animated
+        {
+            animation: popIn 1s ease-out 1s 2 alternate;
+        }
+    }
+
+    @keyframes popIn {
+        from {opacity: 0; transform: scale(0);}
+        to {opacity: 1; transform: scale(1)}
+    }
+}

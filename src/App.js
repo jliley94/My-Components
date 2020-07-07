@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
+import AnimatedText from "./components/animatedText/AnimatedText";
 
 // import MultiDirectionalSlider from './components/multiDirectionalSlider/MultiDirectionalSlider';
 
@@ -39,6 +40,8 @@ function App() {
       <Modal open={modalOpened} action={(state) => setModalOpened(state)}>
         <LoginForm />
       </Modal> */}
+
+      <AnimatedText text="Hello, how are you today?" />
 
     </div>
   );
